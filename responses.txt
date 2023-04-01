@@ -1,0 +1,5 @@
+Question n°4) Quel est l'intérêt de passer par un fichier conf.json ?
+ça sert à appoter de la sécurité, par exemple les mots de passe ne sont pas visibles dans le code
+
+Question n°5) A quoi sert la fonction findOne ?
+ça sert à récupérer des données d'une collection pour le premier enregistrement trouvé (avec ou sans critère de recherche) sur mongodb

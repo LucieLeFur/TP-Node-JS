@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      title= title
+      link(rel='stylesheet' type="text/css" href='/style.css')
+      <script src="/watchlistItem.js"></script>
+    body
+      <h1 style="padding: 20px">Modifier le statut de l'item de la watchlist</h1>
+
+      <form id="formulaire" action="/watchlistsItems" method="post">
+       <div>
+         <label for="idWatchlistItem">Identifiant</label>
+         <input type="text" name="idWatchlistItem" id="idWatchlistItem" reqired>
+       </div>
+       <div>
+          <label for="statut">Statut</label>
+          <select name="statut">
+            <option value="AVOIR">A voir</option>
+            <option value="ENCOURS">En cours</option>
+            <option value="TERMINE">Terminé</option>
+            <option value="ABANDONNE">Abandonné</option>
+          </select>
+       </div>
+       <input class="bouton" style="width: 350px" onClick="validerFormulaire()" value="Modifier statut">
+      </form>

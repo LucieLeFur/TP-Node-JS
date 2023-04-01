@@ -1,0 +1,15 @@
+Question 1 :  A quoi sert le fichier "package.json" créé par la commande npm init?
+-- Un fichier de configuration obligatoire
+-- Pour rentrer un peu plus en détails, le package. json est véritablement le coeur de tout projet utilisant node. 
+
+Question n°2 : A quoi sert le fichier "package-lock.json" généré suite à l’installation d'un package npm ?
+-- Ce fichier sert a repertorier tout les extention de node avec toute les info dessus (ex : version de l'extention)
+
+Question n°3)  
+Il est également possible d'installer un package de la façon suivante: `npm install express --save-dev`.   
+
+Quelle est la différence entre cette commande et celle vue précédemment ?   
+Est ce qu'installer express de cette façon est une bonne idée ?
+
+
+

@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      title= title
+      link(rel='stylesheet' type="text/css" href='/style.css')
+    body
+      <h1 style="padding: 20px">Rechercher un item dans le registre</h1>
+
+      <form action="/items" method="get">
+       <div>
+         <label for="titre">Titre : </label>
+         <input type="text" name="titre">
+       </div>
+       <div>
+         <label for="annee">Année : </label>
+         <input type="text" name="annee">
+       </div>       
+       <div>
+         <label for="genre">Genre : </label>
+         <input type="text" name="genre">
+       </div>
+       <div>
+         <label for="genre">Acteur : </label>
+         <input type="text" name="acteur">
+       </div>
+       <input class="bouton" style="width: 250px" type="submit" value="Rechercher">
+      </form>
+

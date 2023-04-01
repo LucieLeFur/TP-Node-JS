@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      title= title
+      link(rel='stylesheet' type="text/css" href='/style.css')
+    body
+      <h1 style="padding: 20px">Créer une watchlist pour un utilisateur</h1>
+
+      <form action="/watchlists" method="post">
+       <div>
+         <label for="nom">Nom : </label>
+         <input type="text" name="nom" reqired>
+       </div>
+       <div>
+         <label for="description">Description : </label>
+         <input type="text" name="description" required>
+       </div>
+       <div>
+         <label for="idUtilisateur">Id de l'utilisateur</label>
+         <input type="text" name="idUtilisateur" required>
+       </div>
+       <input class="bouton" style="width: 250px" type="submit" value="Créer la watchlist">
+      </form>
+

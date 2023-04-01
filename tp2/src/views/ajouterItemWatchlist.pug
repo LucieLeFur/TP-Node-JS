@@ -1,0 +1,32 @@
+
+doctype html
+html
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      title= title
+      link(rel='stylesheet' type="text/css" href='/style.css')
+    body
+      <h1 style="padding: 20px">Ajouter un item à la watchlist</h1>
+
+      <form action="/watchlistsItems" method="post">
+       <div>
+         <label for="idItem">Id Item</label>
+         <input type="text" name="idItem" reqired>
+       </div>
+       <div>
+         <label for="idWatchlist">Id WatchList</label>
+         <input type="text" name="idWatchlist" reqired>
+       </div>
+       <div>
+          <label for="statut">Statut</label>
+          <select name="statut">
+            <option value="AVOIR">A voir</option>
+            <option value="ENCOURS">En cours</option>
+            <option value="TERMINE">Terminé</option>
+            <option value="ABANDONNE">Abandonné</option>
+          </select>
+       </div>
+       <input class="bouton" style="width: 350px" type="submit" value="Ajouter l'item à la watchlist">
+      </form>

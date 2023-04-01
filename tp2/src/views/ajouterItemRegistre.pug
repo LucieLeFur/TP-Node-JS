@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      title= title
+      link(rel='stylesheet' type="text/css" href='/style.css')
+    body
+      <h1 style="padding: 20px">Ajouter un item au registre</h1>
+
+      <form action="/items" method="post">
+       <div>
+         <label for="titre">Titre du film ou série à ajouter : </label>
+         <input type="text" name="titre" reqired>
+       </div>
+       <input class="bouton" style="width: 250px" type="submit" value="Ajouter l'item">
+      </form>
